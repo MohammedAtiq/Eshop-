@@ -1,0 +1,135 @@
+
+.header{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 40px;
+    background-color:#cae5ff;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    position:sticky;
+    top: 0;
+    left: 0;
+    z-index: 999;
+  }
+
+  .active{
+    color:rgb(34, 152, 156) !important;
+  }
+  .logo{
+    color: #1a1a1a;
+    font-size:25px;
+    text-decoration: none;
+    font-weight:700;
+  }
+
+  .logo span{
+    color:blue;
+  }
+
+  .nav2{
+    display:flex;
+    align-items: center;
+    justify-content:center;
+  }
+  
+  .nav2 li{
+    margin-top: 11px;
+    list-style: none;
+    padding: 0 20px;
+  }
+  
+  .nav2 li a{
+    font-size:18px;
+    text-decoration: none;
+    font-weight:900;
+    color:#1a1a1a;
+    transition: 0.3s ease;
+  }
+  
+  .nav2 li a:hover{
+    color:rgb(34, 152, 156);
+    border-bottom: 2px solid rgb(34, 152, 156);
+  }
+
+  .beg{
+    font-size:25px !important;
+    color:rgb(34, 152, 156) !important;
+    border-bottom: none !important;
+    padding: 0 !important;
+  }
+
+  .bar{
+    color:black !important;
+  }
+  .mobile{
+    display: none;
+    align-items:center;
+  }
+
+  .close{
+    display: none;
+  }
+  
+  @media (max-width:799px){
+    .nav2 {
+      display: initial;
+      flex-direction:column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      position:fixed;
+      top: 0;
+      right: -300px;
+      height:100vh;
+      width: 220px;
+      background-color:#bddefd;
+      box-shadow: 0 10px 10px #000000;
+      padding: 80px 0 0 10px;
+      transition:0.3s ;
+      
+  }
+  .nav2.active{
+    right: 0px;
+    transition: 0.3s;
+  }
+  .nav2 li{
+    margin-bottom: 25px;
+   padding: 15px 15px;
+   border-bottom:1px solid black;
+  }
+
+  .nav2 li:hover{
+    background-color:#cae5ff;
+  }
+  .mobile{
+    display: flex;
+    align-items:center;
+  }
+
+  .mobile i{
+    color:rgb(68, 174, 201);
+    font-size:25px;
+    padding-left:20px ;
+  }
+
+  .close{
+    display:flex;
+    position:absolute;
+    top:30px;
+    left: 30px;
+    color: #1a1a1a;
+    font-size:25px;
+  }
+  .beg{
+    display:none;
+    border: none !important;
+  }
+  .card{
+    margin: 0 20px !important;
+  }
+
+  .card1 img{
+    height:180px!important;
+  }
+  
+  }
+
